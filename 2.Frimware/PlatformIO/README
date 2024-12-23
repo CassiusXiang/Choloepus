@@ -1,0 +1,8 @@
+Choloepus_fw is the firmware for the flexible gripper, developed using PlatformIO on an ESP32.
+Serial_tool_fw is a simple serial communication program used to write parameters to the CAN-TTL module from an external source.
+
+
+
+
+
+
