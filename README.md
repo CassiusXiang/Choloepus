@@ -40,6 +40,8 @@ Except for the motor and the depth camera, all other components were designed in
 
 ![PCB](./4.Docs/Image/layout.png)
 
+![PCB](./4.Docs/Image/pcb.jpg)
+
 You can find the circuit schematics and PCB layout in `./Hardware`.
 
 ## Firmware
