@@ -34,6 +34,10 @@ Choloepus 是一个使用三相电机驱动的FOC柔性夹爪
 | 驱动电源  | 24V->12V DCDC降压 |
 | 控制电源  | 24V->5V DCDC降压, 5V->3.3V LDO降压 |
 
+![PCB](./4.Docs/Image/layout.png)
+
+电路原理图和PCB请见 `./Hardware`
+
 ## 固件
 
 本项目固件使用PlatformIO开发，基于Arduino框架
@@ -51,6 +55,13 @@ Choloepus 是一个使用三相电机驱动的FOC柔性夹爪
 ```python
 my_gripper = gripper(serial_port='COM10', id_num=20)
 ```
+
+Choloepus 支持不同的控制模式，如下表
+|控制模式|指令发送频率|可被新指令打断|
+|-|-|-|
+|位置控制|<250Hz|是|
+|力控制|<50Hz|是|
+|力位置混合控制|<20Hz|是|
 
 ## 视频演示
 
