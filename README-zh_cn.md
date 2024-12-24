@@ -19,6 +19,8 @@ Choloepus 是一个使用三相电机驱动的FOC柔性夹爪
 
 ![](4.Docs/Image/machine_struct.jpg)
 
+除去电机和深度相机外，其余所有组件都是自主设计的，可以通过3D打印，基础的机械加工来完成，模型和工程图请见 `/0.Model`
+
 ## 电路设计
 
 |  设计要点   | 方案  |
@@ -32,18 +34,32 @@ Choloepus 是一个使用三相电机驱动的FOC柔性夹爪
 | 驱动电源  | 24V->12V DCDC降压 |
 | 控制电源  | 24V->5V DCDC降压, 5V->3.3V LDO降压 |
 
-## 控制算法
+## 固件
+
+本项目固件使用PlatformIO开发，基于Arduino框架
+
+我们在开源项目 [SimpleFOC](https://github.com/simplefoc/Arduino-FOC-drivers) 的基础上做了优化以实现驱动柔性夹爪的FOC控制
+
+固件请见 `./2.Frimware`
 
 ## 通信
 
+在Choloepus的底部，有一个XT30的4PIN接口，该接口支持12 ~ 24V的直流电压输入与CAN总线通信
+
+在 `/3.Software` 中，提供了一个Python库用来初始化一个Choloepus对象以建立通信
+
+```python
+my_gripper = gripper(serial_port='COM10', id_num=20)
+```
+
 ## 视频演示
+
+这段视频展示了我们实验室设计的连续体机械臂与Choloepus的配合，完成葡萄缝针的操作。
 
 ## 许可证
 
-OmniRob采用MIT许可证进行发布。请参考[LICENSE](https://github.com/CassiusXiang/OmniRob/blob/main/LICENSE)获取更多信息。
+Choloepus采用MIT许可证进行发布。请参考[LICENSE](https://github.com/CassiusXiang/Choloepus/blob/main/LICENSE)获取更多信息。
 
 ## 联系方式
-
-如果您有任何问题或反馈，请通过[Issues](https://github.com/CassiusXiang/OmniRob/issues)与我们联系。
 
 我的邮箱: changxiangchina@outlook.com
