@@ -73,7 +73,7 @@ Choloepus supports different control modes, shown below:
 This video demonstrates how Choloepus collaborates with a continuum robotic arm designed in our lab to perform a grape suturing operation.
 
 ## License
-Choloepus is released under the **GNU Affero General Public License**, Version 3, 19 November 2007. For more details, please refer to the LICENSE.
+Choloepus is released under the AGPL-3.0. For more details, please refer to the LICENSE.
 
 ## Contact
 Feel free to reach out to me at: changxiangchina@outlook.com

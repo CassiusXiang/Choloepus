@@ -37,6 +37,8 @@ Choloepus 是一个使用三相电机驱动的FOC柔性夹爪
 
 ![PCB](./4.Docs/Image/layout.png)
 
+![PCB](./4.Docs/Image/pcb.jpg)
+
 电路原理图和PCB请见 `./Hardware`
 
 ## 固件
@@ -71,7 +73,7 @@ https://youtu.be/MMdkBzw2Btk
 
 ## 许可证
 
-Choloepus采用MIT许可证进行发布。请参考[LICENSE](https://github.com/CassiusXiang/Choloepus/blob/main/LICENSE)获取更多信息。
+Choloepus采用AGPL-3.0许可证进行发布。请参考[LICENSE](https://github.com/CassiusXiang/Choloepus/blob/main/LICENSE)获取更多信息。
 
 ## 联系方式
 
